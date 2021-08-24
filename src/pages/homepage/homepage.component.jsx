@@ -10,25 +10,27 @@ const HomePage = ({}) => {
   return (
     <HomePageStyle>
       <section className="get-started">
-        <div className="left">
-          <h1>More Than Just</h1>
-          <h1>Shoter Links</h1>
-          <p>
-            Build your brand's recognition and get detailed insights on how your
-            links are performing
-          </p>
-          <div className="button">
-            <ButtonCyan>Get Started</ButtonCyan>
+        <div className="section-middle">
+          <div className="left">
+            <h1>More Than Just</h1>
+            <h1>Shoter Links</h1>
+            <p>
+              Build your brand's recognition and get detailed insights on how
+              your links are performing
+            </p>
+            <div className="button">
+              <ButtonCyan>Get Started</ButtonCyan>
+            </div>
           </div>
-        </div>
-        <div className="right">
-          <WorkerImg className="worker-img"></WorkerImg>
-        </div>
-        <div className="shorten-form">
-          <UrlShortenForm></UrlShortenForm>
+          <div className="right">
+            <WorkerImg className="worker-img"></WorkerImg>
+          </div>
         </div>
       </section>
       <section className="statistic">
+        <div className="shorten-form">
+          <UrlShortenForm></UrlShortenForm>
+        </div>
         <div className="content">
           <div className="text">
             <h1>Advanced Statistics</h1>
