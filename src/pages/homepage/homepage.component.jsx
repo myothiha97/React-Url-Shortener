@@ -12,14 +12,16 @@ const HomePage = ({}) => {
       <section className="get-started">
         <div className="section-middle">
           <div className="left">
-            <h1>More Than Just</h1>
-            <h1>Shoter Links</h1>
-            <p>
-              Build your brand's recognition and get detailed insights on how
-              your links are performing
-            </p>
-            <div className="button">
-              <ButtonCyan>Get Started</ButtonCyan>
+            <div className="left-content">
+              <h1>More Than Just</h1>
+              <h1>Shoter Links</h1>{" "}
+              <p>
+                Build your brand's recognition and get detailed insights on how
+                your links are performing
+              </p>
+              <div className="button">
+                <ButtonCyan>Get Started</ButtonCyan>
+              </div>
             </div>
           </div>
           <div className="right">

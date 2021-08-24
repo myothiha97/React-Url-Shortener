@@ -32,7 +32,10 @@ const UrlShortenForm = () => {
       return results.map((result) => (
         <div className="result">
           <div className="result-content">
-            <p className="left-content">{result.data.long_url}</p>
+            <div className="left-content">
+              <p className="left-content">{result.data.long_url}</p>
+            </div>
+            <div className="line"></div>
             <div className="right-content">
               <p>{result.data.link}</p>
               <div onClick={() => handleCopyClipBoard(result)}>
@@ -69,7 +72,9 @@ const UrlShortenForm = () => {
             onChange={(event) => setLink(event.target.value)}
             value={link}
           />
-          <ButtonCyan>Shorten It!</ButtonCyan>
+          <div className="submit-btn">
+            <ButtonCyan>Shorten It!</ButtonCyan>
+          </div>
         </form>
         {renderResult(results)}
       </div>

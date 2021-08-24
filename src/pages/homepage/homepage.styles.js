@@ -6,11 +6,26 @@ export const HomePageStyle = styled.div`
     display: flex;
     flex-direction: column;
 
+    @media screen and (max-width: 1400px) {
+      padding-left: 50px;
+      padding-top: 50px;
+      transform: scale(0.85);
+    }
+
+    @media screen and (max-width: 900px) {
+      transform: scale(1);
+      padding-top: 20px;
+    }
+
     .section-middle {
       width: 100%;
       display: flex;
-      justify-content: center;
+      justify-content: space-between;
       align-items: center;
+
+      @media screen and (max-width: 900px) {
+        flex-direction: column-reverse;
+      }
     }
 
     .left {
@@ -18,26 +33,74 @@ export const HomePageStyle = styled.div`
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+      align-items: flex-start;
+      text-align: center;
 
-      h1 {
-        font-weight: 700;
-        font-size: 80px;
-        color: #000;
-        &:first-child {
-          margin-bottom: -15px;
-        }
+      @media screen and (max-width: 900px) {
+        width: 100%;
+        align-items: center;
       }
-      p {
-        font-size: 25px;
-        width: 500px;
-        font-weight: 500;
-        margin-bottom: 40px;
+
+      &-content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        @media (max-width: 900px) {
+          align-items: center;
+        }
+        h1 {
+          font-weight: 700;
+          font-size: 80px;
+          color: #000;
+
+          @media screen and (max-width: 1400px) {
+            font-size: 50px;
+          }
+
+          @media screen and (max-width: 445px) {
+            font-size: 35px;
+          }
+          &:first-child {
+            margin-bottom: -15px;
+          }
+        }
+        p {
+          font-size: 25px;
+          width: 25vw;
+          font-weight: 500;
+          margin-bottom: 40px;
+          text-align: left;
+
+          @media (max-width: 900px) {
+            width: 45vw;
+            text-align: center;
+          }
+
+          @media (max-width: 600px) {
+            width: 55vw;
+          }
+
+          @media screen and (max-width: 445px) {
+            font-size: 20px;
+            width: 100%;
+          }
+        }
       }
     }
 
     .right {
       width: 50%;
       transform: translateX(200px) translateY(50px);
+
+      @media screen and (max-width: 1400px) {
+        transform: translate(0);
+      }
+
+      @media screen and (max-width: 900px) {
+        transform: scale(0.8);
+        width: 100%;
+      }
     }
   }
 
@@ -54,6 +117,16 @@ export const HomePageStyle = styled.div`
     background-color: #f0f1f6;
     .content {
       padding: 100px 150px 200px 200px;
+      @media screen and (max-width: 1400px) {
+        padding-left: 50px;
+        padding-right: 50px;
+      }
+
+      @media screen and (max-width: 600px) {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+
       .text {
         text-align: center;
         display: flex;
@@ -69,6 +142,10 @@ export const HomePageStyle = styled.div`
           width: 550px;
           font-size: 23px;
           font-weight: 500;
+
+          @media screen and (max-width: 600px) {
+            width: auto;
+          }
         }
       }
       .cards-container {
@@ -76,6 +153,9 @@ export const HomePageStyle = styled.div`
         margin-top: 100px;
         position: relative;
         z-index: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
         .line {
           width: 100%;
@@ -85,6 +165,11 @@ export const HomePageStyle = styled.div`
           top: 50%;
           transform: translateY(-50%);
           z-index: 2;
+
+          @media screen and (max-width: 1000px) {
+            width: 8px;
+            height: 100%;
+          }
         }
         .cards {
           position: relative;
@@ -93,6 +178,9 @@ export const HomePageStyle = styled.div`
           display: flex;
           justify-content: space-between;
           align-items: center;
+          @media screen and (max-width: 1000px) {
+            flex-direction: column;
+          }
 
           .card-wrapper {
             &:nth-of-type(2) {
@@ -128,6 +216,13 @@ export const HomePageStyle = styled.div`
         color: #fff;
         font-weight: 700;
         margin-bottom: 12px;
+
+        @media screen and (max-width: 587px) {
+          font-size: 30px;
+        }
+        @media screen and (max-width: 358px) {
+          font-size: 20px;
+        }
       }
     }
   }

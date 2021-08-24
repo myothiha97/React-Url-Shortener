@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const ButtonCyanStyle = styled.button`
+  width: inherit;
   padding: 15px 40px;
   border-radius: 20px;
   color: #fff;

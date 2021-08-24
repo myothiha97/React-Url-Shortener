@@ -1,13 +1,30 @@
 import styled from "styled-components";
 
 export const CardStyled = styled.div`
+  width: 20vw;
   padding: 80px 30px 40px 30px;
   position: relative;
   background-color: #fff;
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media screen and (max-width: 1400px) {
+    width: 25vw;
+  }
+  @media screen and (max-width: 1000px) {
+    width: 45vw;
+  }
+  @media screen and (max-width: 700px) {
+    width: 55vw;
+  }
+
+  @media screen and (max-width: 509px) {
+    width: 80vw;
+  }
   .texts {
-    width: 350px;
     text-align: left;
     font-weight: 500;
     font-size: 18px;
