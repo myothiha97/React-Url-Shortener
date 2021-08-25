@@ -24,6 +24,10 @@ export const NavbarStyle = styled.div`
         display: flex;
         justify-content: space-between;
         align-items: center;
+
+        @media (max-width: 1650px) {
+          width: 30vw;
+        }
         .heading {
           h2 {
             font-size: 35px;

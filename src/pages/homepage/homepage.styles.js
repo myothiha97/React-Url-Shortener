@@ -36,6 +36,10 @@ export const HomePageStyle = styled.div`
       align-items: flex-start;
       text-align: center;
 
+      @media (max-width: 1450px) {
+        width: 60%;
+      }
+
       @media screen and (max-width: 900px) {
         width: 100%;
         align-items: center;
@@ -54,7 +58,7 @@ export const HomePageStyle = styled.div`
           font-size: 80px;
           color: #000;
 
-          @media screen and (max-width: 1400px) {
+          @media screen and (max-width: 1450px) {
             font-size: 50px;
           }
 

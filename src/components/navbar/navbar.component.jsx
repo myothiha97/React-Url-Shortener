@@ -5,7 +5,7 @@ import ButtonCyan from "../button-cyan/button-cyan.component";
 import HiddenMenu from "../hidden-menu/hidden-menu.component";
 
 const NavBar = ({}) => {
-  const [open, toggelOpen] = useState(true);
+  const [open, toggelOpen] = useState(false);
   return (
     <NavbarStyle isOpen={open}>
       <div className="navbar-wrapper">
